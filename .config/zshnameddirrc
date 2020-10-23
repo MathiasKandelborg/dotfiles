@@ -1,0 +1,10 @@
+hash -d d=~/Documents 
+hash -d D=~/Downloads 
+hash -d h=${XDG_CONFIG_HOME:-~/} 
+hash -d m=~/Music 
+hash -d pp=~/Pictures 
+hash -d vv=~/Videos 
+hash -d cf=${XDG_CONFIG_HOME:-$HOME/.config} 
+hash -d cac=${XDG_CACHE_HOME:-$HOME/.cache} 
+hash -d mn=/mnt 
+hash -d sc=~/.local/bin 

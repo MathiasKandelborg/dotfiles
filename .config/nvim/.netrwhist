@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/mathias/Programming/web/front/TypeScript/TRUE/packages/web/util/i18n'
+let g:netrw_dirhist_6='/home/mathias/Programming/web/front/TypeScript/TRUE/packages/web/components'
+let g:netrw_dirhist_5='/home/mathias/.config/nvim/plugged'
+let g:netrw_dirhist_4='/home/mathias/Programming/web/front/TypeScript/TRUE/packages/web/node_modules/next/dist/export'
+let g:netrw_dirhist_3='/home/mathias/.config/notvim'
+let g:netrw_dirhist_2='/home/mathias/.config/ncmpcpp'
+let g:netrw_dirhist_1='/home/mathias/Programming/web/front/TypeScript/py-modeller/web/mathias/Programming/web/front/TypeScript/py-modeller/web/a'

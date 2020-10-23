@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# This script does the following:
+#	Run by itself, set the wallpaper (at X start).
+#	If given a file, set that as the new wallpaper.
+#	If given a directory, choose random file in it.
+#	If wal is installed, also generates a colorscheme.
+
+# read -p "Which user: " username
+
+# if [ $username = "root" ]; then
+#     echo "User can't be root"
+#     exit 1    
+# fi
+# 
+# if [ -z $username ]; then
+#     echo "Error! needs a user"
+#     exit 1
+# fi
+
+# Location for wallpaper.
+bgloc="${XDG_DATA_HOME:-$HOME/.local/share}/bg"
+
+if [ -f "$1" ]; then
+    ln -sf "$(readlink -f "$1")" "$bgloc" # && notify-send -i "$bgloc" "Changing wallpaper..."
+elif [ -d "$1" ]; then
+    ln -sf "$(find "$(readlink -f "$1")" -iregex '.*.\(jpg\|jpeg\|png\|gif\)' -type f | shuf -n 1)" "$bgloc"
+fi
+
+wal --backend colortheif \
+ -i "$(readlink -f "$bgloc")" \
+ --saturate 0.4
+ -o "${XDG_CONFIG_HOME}/wal/postrun" >/dev/null 2>&1
+
+feh --bg-fill "$bgloc"
+
+echo Copying file to pixmaps...
+echo y | sudo cp -ifL "$1" /usr/share/pixmaps/bg >/dev/null 2>&1
+
+# pidof dwm >/dev/null && xdotool key super+F12

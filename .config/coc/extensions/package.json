@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "coc-actions": ">=1.4.2",
+    "coc-eslint": ">=1.3.2",
+    "coc-fzf-preview": ">=0.4.19",
+    "coc-highlight": ">=1.2.6",
+    "coc-json": ">=1.3.2",
+    "coc-lua": ">=0.2.1",
+    "coc-markdownlint": ">=1.6.0",
+    "coc-prettier": ">=1.1.17",
+    "coc-tsserver": ">=1.5.8"
+  }
+}

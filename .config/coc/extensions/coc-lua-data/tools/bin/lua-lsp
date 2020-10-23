@@ -1,0 +1,3 @@
+#!/bin/sh
+
+LUAROCKS_SYSCONFDIR='/etc/luarocks' exec '/usr/bin/lua5.3' -e 'package.path="/home/mathias/.config/coc/extensions/coc-lua-data/tools/share/lua/5.3/?.lua;/home/mathias/.config/coc/extensions/coc-lua-data/tools/share/lua/5.3/?/init.lua;"..package.path;package.cpath="/home/mathias/.config/coc/extensions/coc-lua-data/tools/lib/lua/5.3/?.so;"..package.cpath;local k,l,_=pcall(require,"luarocks.loader") _=k and l.add_context("lua-lsp","scm-2")' '/home/mathias/.config/coc/extensions/coc-lua-data/tools/lib/luarocks/rocks-5.3/lua-lsp/scm-2/bin/lua-lsp' "$@"
