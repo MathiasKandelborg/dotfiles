@@ -1,0 +1,7 @@
+[Default Applications]
+x-scheme-handler/gitkraken=GitKraken.desktop
+
+[Added Associations]
+text/x-csrc=code-oss.desktop;nvim.desktop;
+text/plain=gvim.desktop;
+image/webp=feh.desktop;

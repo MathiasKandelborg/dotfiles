@@ -1,0 +1,20 @@
+{
+    "Lua.diagnostics.globals": [
+        "awesome",
+        "client",
+        "globalkeys",
+        "clientkeys",
+        "clientbuttons",
+        "root",
+        "screen",
+        "mytextclock",
+        "mykeyboardlayout",
+        "terminal",
+        "editor",
+        "editor_cmd",
+        "modkey",
+        "myawesomemenu",
+        "mymainmenu",
+        "mylauncher"
+    ]
+}
